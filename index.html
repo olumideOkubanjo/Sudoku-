@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Sudoku</title>
+        <script src="libraries/p5.js" type="text/javascript"></script>
+
+        <script src="libraries/p5.dom.js" type="text/javascript"></script>
+        <script src="libraries/p5.sound.js" type="text/javascript"></script>
+        <script src="Values.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="sudokumainpagestyle.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="Helpers.js" type="text/javascript"></script>
+        <script src="drawings.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="sudokuFlow.js"></script>
+        <script src="SudokuMain.js" type="text/javascript"></script>
+
+
+        <link rel="icon" href="Pictures/sudoku-logo.png">
+    </head>
+
+    <body>
+
+        <ul>
+            <li><a href="#home" class="Hhome">Home</a></li>
+            <li style="float:right"><a href="#home" class="active">Log In</a></li>
+            <li style="float:right"><a href="#home" class="activeC">Sign Up</a></li>
+        </ul>
+
+        <!-- Menu Bar -->
+        <div id="header">
+            <img src="http://mkbizon.net/wp/wp-content/uploads/Sudoku-How-to-solve.jpg" width="1200" height="700" class="sudokuImg">
+            <h4 class = "sudokuMessage">If you're a new player please sign up to initaite game<h4>
+    </div>
+
+    <!--Buttons-->
+    <div id="initiateGame">
+      <button class="easy">Easy</button>
+      <button class="medium">Medium</button>
+      <button class="hard">Hard</button>
+      <h4><b>(Click difficulty level to start he game)</b></h4>
+        </div>
+
+        <!-- Log in  -->
+        <div id="logIn">
+            <h2>Username : <input type="text" class="userName"></h2></h2>
+            <h2>Password : <input type="password" class="passWord"><br>
+            <p class="LogInReq">PassWord or username is wrong</p>
+        <button class="logInButton">Login</button>
+  </div>
+
+  <div id="createAccount">
+      <h2>First Name : <input type="text" class="firstName"></h2>
+            <h2>Last Name : <input type="text" class="lastName"></h2>
+            <!-- User name must have at least  -->
+            <h2>Username : <input type="text" class="cUserName"></h2>
+            <p class="userNameReq">Username must have more than 5 characters</p>
+            <h2>Password : <input type="password" class="cPassword"></h2>
+            <p class="passReq">Must contain more than 5 characters</p>
+            <h2>Confirm Password : <input type="password" class="cConfPassword"></h2>
+            <p class="confPassReq"> Passwords do not match</p>
+            <h2>Valid Email : <input type="text" class= "cEmail"></h2>
+            <button class="signUpButton">Sign up</button>
+        </div>
+        <h1 class="welcome"></h1>
+    </body>
+    <div>
+        <button class="saveButton">Save</button>
+        <!-- <button class="loadButton">Load</button> -->
+        <div class="correctOrNot" width = "200px" height = "100px">
+        <p>Yellow = correct, Red = incorrect</p>
+        </div>
+    </div>
+
+</html>
